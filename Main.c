@@ -8,7 +8,7 @@ int main(void)
 	// Activate clock for Port F
 	SYSCTL_RCGCGPIO_R |= 0x00000020;
 
-	// Allow time for clock to stabilize
+	// Allow time for the clock to stabilize
  	while ((SYSCTL_PRGPIO_R&0x20) == 0)
 	{
 	}
